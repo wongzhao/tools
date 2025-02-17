@@ -3,6 +3,9 @@ from googleapiclient.discovery import build
 import time
 import json
 
+# Get started (Gmail): https://developers.google.com/gmail/api/quickstart/python
+# Get started (People): https://developers.google.com/people/quickstart/python
+
 # Gmail documentation: https://developers.google.com/resources/api-libraries/documentation/gmail/v1/python/latest/gmail_v1.users.messages.html
 # People groups docs: https://developers.google.com/resources/api-libraries/documentation/people/v1/python/latest/people_v1.contactGroups.html
 
@@ -175,7 +178,7 @@ Or, enter 'n' to fetch the next page or 'q' to quit.
             print("-", rn)
 
         ok = input("\nOK? (y/n) ")
-        if ok == 'y':
+        if ok == "y":
             group_backup = {
                 "data": group_res,
                 "removed": to_remove
